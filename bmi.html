@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title> BMI calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9688e656cc.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="bmi.css">
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transperent">
+        <a class="navbar-brand" href="#"> <b> BMI calculator </b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">home<span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Deit Plan
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#gain">Weight Gain</a>
+                <a class="dropdown-item" href="#loss">Weight loss</a>
+                <div class="dropdown-divider"></div>
+                
+              </div>
+            </li>
+           
+          </ul>
+          
+        </div>
+      </nav>
+
+      <div id="home">
+
+    <div class="hetvi"> <b>
+        <u >Check Your Body Mass Index</u>      <br>
+        <br>
+        <br>
+
+
+       weight:  <input type="number" id="weight" placeholder="weight in kg ">    <br> <br>
+       
+         height: <input type="number" id="height" placeholder="height in cm">
+        <br>
+        <br>
+        result: <input type="number" id="bmi"> </b>
+        <br>
+        <br>
+
+         <button type="submit" class="btn btn-success" onclick="getbmivalue()"> check bmi</button>
+        </div>
+      </div>
+
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="padding-top: 50px;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="div1">
+                <p class="ptag">Body Mass Index for Male</p>
+              <img src="mbmi.webp" height="500px" width="800px" >
+            </div>
+            </div>
+            <div class="carousel-item">
+              <div class="div1">
+                <p class="ptag">Body Mass Index for Female</p>
+              <img src="fbmi.jpg" height="500px" width="800px">
+            </div>
+            </div>
+           
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="color: black;>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only" ">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" style="color: black;>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only" >Next</span>
+          </a>
+        </div>
+
+        <div style="color: chartreuse;">
+          <i class="fas fa-salad"></i>
+        
+        
+          <i class="fas fa-turkey"></i>
+       
+        </div>
+         <div id="gain">
+        <b id="b1">A perfect diet plan to stay fit</b>
+
+        <p class="mainheading">The Five Best Healthy Foods to Gain Weight Fast  </p> <br>
+
+        <div class="row" >
+          <div class="col-lg-8">
+       <u> <b class="heading"> 1. Homemade Protein Smoothies:-</b> </u>  <br>
+ <div class="content"> Drinking homemade protein smoothies can be a highly nutritious and quick way to gain weight.  <br>  
+
+Making your own smoothies is the best way since commercial versions are often full of sugar and lack nutrients. It also gives you full control over the flavor and nutrient content. <br>  
+
+Here are just a few tasty variations you can try. You can combine each with 2 cups (470 ml) of milk or an alternative like almond milk. <br> 
+
+ <i> <u> Chocolate banana nut shake: </u></i> Combine 1 banana, 1 scoop of chocolate whey protein and 1 tablespoon (15 ml) of peanut or another nut butter. <br>
+ <i> <u> Vanilla berry shake:</u></i>  Combine 1 cup (237 ml) of fresh or frozen mixed berries, ice, 1 cup (237 ml) of high-protein natural yogurt and 1 scoop of vanilla whey protein. <br>
+ <i> <u> Chocolate hazelnut shake:</u></i>  Combine 15 ounces (444 ml) of chocolate milk with 1 scoop of chocolate whey protein, 1 tablespoon (15 ml) of hazelnut butter and 1 avocado. <br>
+</div> 
+ </div> 
+ <div class="col-lg-4"> <img id="protine" class="rounded" src="protineshake.jpg" alt=""> </div> 
+</div>
+
+<div class="row">
+  <div class="col-lg-4"> <img id="milk" class="rounded" src="milk.jpg" alt=""> </div>
+  <div class="col-lg-8"> 
+   <b class="heading"> <u> 2. Milk:- </u> </b>
+ <div class="content">
+  Milk has been used as a weight gainer or muscle builder for decades (1Trusted Source). <br>
+  
+  It provides a good balance of proteins, carbs and fats and is a good source of calcium, as well as other vitamins and minerals. <br>
+  
+  For those trying to add more muscle, milk is an excellent protein source that provides both casein and whey proteins. Research has even shown it can help you add muscle when combined with weight lifting (3Trusted Source, 4Trusted Source). <br>
+  
+  Additionally, studies have found that milk, or whey and casein combined, can lead to greater mass gain than other protein sources (4Trusted Source, 5Trusted Source). <br>
+  
+  Try drinking around one or two glasses as a snack, with a meal, or before and after a workout if you are training. <br>
+   </div>
+  </div>
+  
+  </div>
+
+
+  <div class="row"> 
+    <div class="col-lg-8">
+    <b class="heading"> <u>3. Rice </u></b>
+    <div class="content">
+    Rice is a convenient, low-cost carb source to help you gain weight. Just 1 cup (165 grams) of cooked rice provides 190 calories, 43 grams of carbs and very little fat (6). <br>
+    
+    It is also fairly calorie-dense, meaning you can easily obtain a high amount of carbs and calories from a single serving. This helps you eat more food, especially if you have a poor appetite or get full quickly. <br>
+    
+    When you’re on the go or in a rush, two-minute packs of microwavable rice can be easily added to other protein sources and pre-made meals. <br>
+  </div>
+</div>
+<div class="col-lg-4"> <img id="rice" class="rounded" src="rice.jpg" alt=""> </div>
+</div>
+
+
+  <div class="row"> 
+    <div class="col-lg-4"> <img  id="nut" class="rounded" src="nut.jpg" alt=""> </div>
+    <div class="col-lg-8"> 
+    <b class="heading"> <u>4. Nuts and Nut Butters </u></b>
+    <div class="content">
+    Nuts and nut butters are a perfect choice if you're looking to gain weight. <br>
+    
+    Just one small handful of almonds contains over 7 grams of protein and 18 grams of healthy fats (8). <br>
+    
+    Since they’re very calorie-dense, just two handfuls per day with a meal or as a snack can quickly add hundreds of calories. <br>
+    
+    Nut butters can also be added to a variety of snacks or dishes, such as smoothies, yogurts and much more. <br>
+    
+    However, make sure you pick 100% nut butters with no added sugar or extra oils. <br>
+  </div>
+</div>
+
+</div>
+
+
+  <div class="row">
+    <div class="col-lg-8"> 
+    <b class="heading"> <u>5. Potatoes and Starches </u></b>  <br>
+    <div class="content">
+    Potatoes and other starchy foods are a very easy and cost-effective way to add in extra calories. <br>
+    
+    Try to choose one of these healthy sources of starchy carbs: <br>
+    
+   <i> Quinoa <br></i>
+   <i> Oats <br> </i>
+   <i>   Corn <br></i>
+   <i>   Buckwheat <br></i>
+   <i>   Potatoes and sweet potatoes <br></i>
+   <i>   Squash <br></i>
+   <i>  Winter root vegetables <br></i>
+   <i>   Beans and legumes <br> </i>
+    Not only do potatoes and other starches add carbs and calories to help you gain weight — they also increase your muscle glycogen stores. <br>
+    
+    Glycogen is the predominant fuel source for most sports and activities (12Trusted Source, 13Trusted Source). <br>
+    
+    Many of these carb sources also provide important nutrients and fiber, as well as resistant starch, which can help nourish your gut bacteria. br
+  </div>
+  </div>
+  <div class="col-lg-4"> <img id="potatos" class="rounded" src="potatos.jpg" alt=""> </div>
+  </div>
+</div>
+
+
+  <div id="loss">
+  <p class="mainheading">The diet for lossing weight  </p> <br>
+
+  <div class="row" >
+    <div class="col-lg-4"> <img src="cut.jpg" alt=""> </div>
+    <div class="col-lg-8">
+    <b class="heading"> <u> 1. Cut back on carbs </u> </b>
+ 
+  <div class="content">
+The most important part is to cut back on sugars and starches, or carbohydrates.  <br>
+
+When you do that, your hunger levels go down, and you generally end up eating significantly fewer calories (1).  <br>
+
+Instead of burning carbs for energy, your body now starts burning stored fat for energy.   <br>
+
+Another benefit of cutting carbs is that it lowers insulin levels, causing the kidneys to shed excess sodium and water. This reduces bloating and unnecessary water weight (2, 3Trusted Source).  <br>
+
+According to some dietitians, it’s not uncommon to lose up to 10 pounds (4.5 kg) — sometimes more — in the first week of eating this way. This weight loss includes both body fat and water weight.   <br>
+
+One study in healthy women with obesity reported that a very low carb diet was more effective than a low fat diet for short-term weight loss (4Trusted Source).   <br>
+
+Research suggests that a low carb diet can reduce appetite, which may lead you to eat fewer calories without thinking about it or feeling hungry (5).  <br>
+
+Put simply, reducing carbs can lead to quick, easy weight loss. <br>
+</div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8">
+ <b class="heading"> <u> 2. Eat protein, fat, and vegetables </u> </b>
+ <div class="content">
+Each one of your meals should include a protein source, fat source, and low carb vegetables.  <br>
+
+As a general rule, try eating two to three meals per day. If you find yourself hungry in the afternoon, add a fourth meal.  <br>
+
+Constructing your meals in this way should bring your carb intake down to around 20–50 grams per day.  <br>
+
+To see how you can assemble your meals, check out this low carb meal plan and list of 101 healthy low carb recipes.  <br>
+
+Protein
+Eating plenty of protein is an essential part of this plan.  <br>
+
+Evidence suggests that eating lots of protein may boost calorie expenditure by 80–100 calories per day (6Trusted Source, 7Trusted Source, 8Trusted Source).  <br>
+
+High protein diets can also reduce cravings and obsessive thoughts about food by 60%, reduce the desire to snack late at night by half, and make you feel full. In one study, people on a higher protein diet ate 441 fewer calories per day (9Trusted Source, 10Trusted Source).  <br>
+
+When it comes to losing weight, protein is a crucial nutrient to think about.  <br>
+
+<b> <u> Healthy protein sources include:  </u> </b>  <br>
+Meat: beef, chicken, pork, and lamb  <br>
+Fish and seafood: salmon, trout, and shrimp  <br>
+Eggs: whole eggs with the yolk  <br>
+Plant-based proteins: beans, legumes, and soy  <br>
+Healthy fats  <br>
+Don’t be afraid of eating fats. Trying to do low carb and low fat at the same time can make sticking to the diet very difficult.  <br>
+
+ <b> <u> Sources of healthy fats include: </u> </b> <br>
+olive oil  <br>
+coconut oil <br>
+avocado oil <br>
+butter <br>
+</div>
+</div>
+<div class="col-lg-4"> <img src="vegitable.jpg" alt=""> </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4"> <img src="weightlifting.jpg" alt="" style="height: 400px; width: 400px;" > </div>
+  <div class="col-lg-8">
+<b class="heading"> <u> 3. Lift weights three times per week </u> </b>
+<div class="content">
+You don't need> to exercise to lose weight on this plan, but it will have extra benefits.  <br>
+
+By lifting weights, you will burn lots of calories and prevent your metabolism from slowing down, which is a common side effect of losing weight (11, 12Trusted Source).  <br>
+
+Studies on low carb diets show that you can gain a bit of muscle while losing significant amounts of body fat (13). <br>
+
+Try going to the gym three to four times a week to lift weights. If you're new to the gym, ask a trainer for some advice.  <br>
+
+If lifting weights is not an option for you, doing some cardio workouts like walking, jogging, running, cycling, or swimming will suffice. Both cardio and weightlifting can help with weight loss. <br>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<script>
+        function getbmivalue()
+        {
+           var weight= document.getElementById("weight").value;
+           var height= document.getElementById("height").value;
+           
+           height=height/100; 
+
+           var newbmival= weight/(height*height);
+
+           document.getElementById("bmi").value= newbmival;
+           if(newbmival<18.5){
+             alert("Being underweight isn't good for your health. Find out what you can do if you're concerned about yourself or someone else.")
+           }
+           else{
+             alert("being overweight isn't good for your health.Find out what you can do if you're concerned about yourself or someone else.")
+           }
+        }
+    </script>
+</body>
+</html>
