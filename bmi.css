@@ -17,7 +17,7 @@ body{
     background-color:rgba(0,0,0, 0.1);
 }
 
-.hetvi [input type="number"]
+.hetvi[type="number"]
 {
     border-bottom:1px solid black;
     background:transparent;
